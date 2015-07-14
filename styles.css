@@ -137,6 +137,7 @@ em {
 }
 .container {
     max-width: 800px;
+    padding-bottom: 50px;
 }
 .intro {
     padding: 50px;
