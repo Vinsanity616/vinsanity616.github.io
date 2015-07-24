@@ -797,7 +797,7 @@ main ul li a:hover {
 	}
 	.dev .wrapper {
 	    position: absolute;
-	    top: auto;
+	    top: 100px;
 	    left: auto;
 	    right: 0;
 	    transform: translate(-50%, -50%);
