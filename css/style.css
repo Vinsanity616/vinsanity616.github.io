@@ -4,25 +4,25 @@
 Primary style
 
 -------------------------------- */
-/* line 8, style.scss */
+/* line 8, styles.scss */
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 14, style.scss */
+/* line 14, styles.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 17, style.scss */
+/* line 17, styles.scss */
 html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 22, style.scss */
+/* line 22, styles.scss */
 body {
   font-size: 1.6rem;
   font-family: "Merriweather", serif;
@@ -30,13 +30,13 @@ body {
   background-color: #ffffff;
 }
 
-/* line 29, style.scss */
+/* line 29, styles.scss */
 body, html {
   /* prevent horizontal scrolling */
   overflow-x: hidden;
 }
 
-/* line 34, style.scss */
+/* line 34, styles.scss */
 a {
   color: #9cb3a8;
   text-decoration: none;
@@ -52,7 +52,7 @@ a {
 Main Components 
 
 -------------------------------- */
-/* line 49, style.scss */
+/* line 49, styles.scss */
 main {
   position: relative;
   z-index: 2;
@@ -78,17 +78,17 @@ main {
   transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
 }
 
-/* line 74, style.scss */
+/* line 74, styles.scss */
 main.page-content {
   padding: 50px 200px;
 }
 
-/* line 77, style.scss */
+/* line 77, styles.scss */
 main h1, main p {
   text-align: center;
 }
 
-/* line 80, style.scss */
+/* line 80, styles.scss */
 main h1,
 main h2 {
   font-family: 'Oswald', sans-serif;
@@ -98,7 +98,7 @@ main h2 {
   margin: 1em 0;
 }
 
-/* line 88, style.scss */
+/* line 88, styles.scss */
 main p {
   font-family: "Merriweather", serif;
   color: #d6dfdb;
@@ -107,7 +107,7 @@ main p {
   line-height: 1.6;
 }
 
-/* line 95, style.scss */
+/* line 95, styles.scss */
 main ul,
 main ul li a {
   font-size: 24px;
@@ -117,14 +117,14 @@ main ul li a {
   opacity: 0.8;
 }
 
-/* line 103, style.scss */
+/* line 103, styles.scss */
 main ul li a:hover {
   color: orange;
   text-decoration: underline;
   opacity: 1;
 }
 
-/* line 108, style.scss */
+/* line 108, styles.scss */
 .navigation-is-open main {
   -webkit-transform: translateX(100%);
   -moz-transform: translateX(100%);
@@ -133,7 +133,7 @@ main ul li a:hover {
   transform: translateX(100%);
 }
 
-/* line 116, style.scss */
+/* line 116, styles.scss */
 .magento {
   background-color: #000;
   background: url(../img/magento-logo.png) black;
@@ -141,25 +141,26 @@ main ul li a:hover {
   background-position: 80% 50%;
 }
 
-/* line 123, style.scss */
+/* line 123, styles.scss */
 .wordpress {
   background-color: #2d9dcc;
   background: url(../img/wordpress-logo.png) #2d9dcc;
   background-repeat: no-repeat;
   background-position: 80% 50%;
+  background-size: 350px 350px;
 }
 
-/* line 130, style.scss */
+/* line 131, styles.scss */
 .dev {
   background-color: #fff;
 }
 
-/* line 134, style.scss */
+/* line 135, styles.scss */
 .magento a:hover {
   color: #F05A28;
 }
 
-/* line 138, style.scss */
+/* line 139, styles.scss */
 .dev a,
 .dev,
 .dev h1,
@@ -171,17 +172,17 @@ main ul li a:hover {
   color: #656e79;
 }
 
-/* line 148, style.scss */
+/* line 149, styles.scss */
 .dev a:hover {
   color: #33a9dc;
 }
 
-/* line 153, style.scss */
+/* line 154, styles.scss */
 .design {
   background: #ededed;
 }
 
-/* line 156, style.scss */
+/* line 157, styles.scss */
 .design,
 .design h1,
 .design h2,
@@ -192,17 +193,17 @@ main ul li a:hover {
   color: #434343;
 }
 
-/* line 165, style.scss */
+/* line 166, styles.scss */
 .design a {
   color: #434343;
 }
 
-/* line 168, style.scss */
+/* line 169, styles.scss */
 .design a:hover {
   color: #338899;
 }
 
-/* line 171, style.scss */
+/* line 172, styles.scss */
 .design .holder {
   position: relative;
   float: right;
@@ -211,7 +212,7 @@ main ul li a:hover {
   display: block;
 }
 
-/* line 179, style.scss */
+/* line 180, styles.scss */
 .design #layer-1 {
   -webkit-animation-name: spin;
   -webkit-animation-duration: 4000ms;
@@ -232,65 +233,65 @@ main ul li a:hover {
 }
 
 @-ms-keyframes spin {
-  /* line 199, style.scss */
+  /* line 200, styles.scss */
   from {
     -ms-transform: rotate(0deg);
   }
 
-  /* line 200, style.scss */
+  /* line 201, styles.scss */
   to {
     -ms-transform: rotate(360deg);
   }
 }
 @-moz-keyframes spin {
-  /* line 203, style.scss */
+  /* line 204, styles.scss */
   from {
     -moz-transform: rotate(0deg);
   }
 
-  /* line 204, style.scss */
+  /* line 205, styles.scss */
   to {
     -moz-transform: rotate(360deg);
   }
 }
 @-webkit-keyframes spin {
-  /* line 207, style.scss */
+  /* line 208, styles.scss */
   from {
     -webkit-transform: rotate(0deg);
   }
 
-  /* line 208, style.scss */
+  /* line 209, styles.scss */
   to {
     -webkit-transform: rotate(360deg);
   }
 }
 @keyframes spin {
-  /* line 211, style.scss */
+  /* line 212, styles.scss */
   from {
     transform: rotate(0deg);
   }
 
-  /* line 214, style.scss */
+  /* line 215, styles.scss */
   to {
     transform: rotate(360deg);
   }
 }
-/* line 222, style.scss */
+/* line 219, styles.scss */
 .design .shape-1, .design .shape-4 {
   opacity: 0.2;
 }
 
-/* line 225, style.scss */
+/* line 222, styles.scss */
 .design .shape-2, .design .shape-5 {
   opacity: 0.5;
 }
 
-/* line 228, style.scss */
+/* line 225, styles.scss */
 .design .shape-3, .design .shape-6 {
   opacity: 0.5;
 }
 
-/* line 231, style.scss */
+/* line 228, styles.scss */
 .design h1 {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
@@ -304,7 +305,7 @@ main ul li a:hover {
   margin-top: -35px;
 }
 
-/* line 244, style.scss */
+/* line 241, styles.scss */
 .dev .wrapper {
   position: absolute;
   top: 50%;
@@ -312,11 +313,11 @@ main ul li a:hover {
   transform: translate(-50%, -50%);
 }
 
-/* line 249, style.scss */
+/* line 246, styles.scss */
 .dev .wrapper {
   text-align: center;
 }
-/* line 253, style.scss */
+/* line 250, styles.scss */
 .dev .wrapper::after {
   content: '';
   display: inline-block;
@@ -327,64 +328,64 @@ main ul li a:hover {
 }
 
 @keyframes spin {
-  /* line 266, style.scss */
+  /* line 263, styles.scss */
   0% {
     transform: perspective(1000px) translateY(-2%) rotateY(0deg);
   }
 
-  /* line 269, style.scss */
+  /* line 266, styles.scss */
   24% {
     opacity: 1;
   }
 
-  /* line 270, style.scss */
+  /* line 267, styles.scss */
   25% {
     opacity: 0.5;
   }
 
-  /* line 271, style.scss */
+  /* line 268, styles.scss */
   50% {
     transform: perspective(1000px) translateY(-5%) rotateY(180deg);
   }
 
-  /* line 274, style.scss */
+  /* line 271, styles.scss */
   75% {
     opacity: 0.5;
   }
 
-  /* line 275, style.scss */
+  /* line 272, styles.scss */
   76% {
     opacity: 1;
   }
 
-  /* line 276, style.scss */
+  /* line 273, styles.scss */
   100% {
     transform: perspective(1000px) translateY(-2%) rotateY(360deg);
   }
 }
-/* line 281, style.scss */
+/* line 278, styles.scss */
 .dev .logo {
   display: block;
   animation: spin 30s linear infinite, spin-hard 30s step-start infinite;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 287, style.scss */
+  /* line 284, styles.scss */
   main {
     padding: 250px 10%;
   }
 
-  /* line 290, style.scss */
+  /* line 287, styles.scss */
   main h1 {
     font-size: 3.6rem;
   }
 
-  /* line 293, style.scss */
+  /* line 290, styles.scss */
   main p {
     font-size: 2rem;
   }
 }
-/* line 298, style.scss */
+/* line 295, styles.scss */
 .cd-nav-trigger {
   position: fixed;
   z-index: 3;
@@ -403,7 +404,7 @@ main ul li a:hover {
   transition: transform 0.5s;
 }
 
-/* line 315, style.scss */
+/* line 312, styles.scss */
 .cd-nav-trigger .cd-nav-icon {
   /* icon created in CSS */
   position: absolute;
@@ -421,7 +422,7 @@ main ul li a:hover {
   background-color: #ffffff;
 }
 
-/* line 331, style.scss */
+/* line 328, styles.scss */
 .cd-nav-trigger .cd-nav-icon::before, .cd-nav-trigger .cd-nav-icon:after {
   /* upper and lower lines of the menu icon */
   content: '';
@@ -444,7 +445,7 @@ main ul li a:hover {
   transition: transform 0.5s, width 0.5s, top 0.3s;
 }
 
-/* line 352, style.scss */
+/* line 349, styles.scss */
 .cd-nav-trigger .cd-nav-icon::before {
   -webkit-transform-origin: right top;
   -moz-transform-origin: right top;
@@ -458,7 +459,7 @@ main ul li a:hover {
   transform: translateY(-6px);
 }
 
-/* line 364, style.scss */
+/* line 361, styles.scss */
 .cd-nav-trigger .cd-nav-icon::after {
   -webkit-transform-origin: right bottom;
   -moz-transform-origin: right bottom;
@@ -472,24 +473,24 @@ main ul li a:hover {
   transform: translateY(6px);
 }
 
-/* line 376, style.scss */
+/* line 373, styles.scss */
 .no-touch .cd-nav-trigger:hover .cd-nav-icon::after {
   top: 2px;
 }
 
-/* line 379, style.scss */
+/* line 376, styles.scss */
 .no-touch .cd-nav-trigger:hover .cd-nav-icon::before {
   top: -2px;
 }
 
-/* line 382, style.scss */
+/* line 379, styles.scss */
 .cd-nav-trigger svg {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-/* line 387, style.scss */
+/* line 384, styles.scss */
 .cd-nav-trigger circle {
   /* circle border animation */
   -webkit-transition: stroke-dashoffset 0.4s 0s;
@@ -497,7 +498,7 @@ main ul li a:hover {
   transition: stroke-dashoffset 0.4s 0s;
 }
 
-/* line 393, style.scss */
+/* line 390, styles.scss */
 .navigation-is-open .cd-nav-trigger {
   /* rotate trigger when navigation becomes visible */
   -webkit-transform: rotate(180deg);
@@ -507,7 +508,7 @@ main ul li a:hover {
   transform: rotate(180deg);
 }
 
-/* line 401, style.scss */
+/* line 398, styles.scss */
 .navigation-is-open .cd-nav-trigger .cd-nav-icon::after,
 .navigation-is-open .cd-nav-trigger .cd-nav-icon::before {
   /* animate arrow --> from hamburger to arrow */
@@ -517,7 +518,7 @@ main ul li a:hover {
   transition: transform 0.5s, width 0.5s;
 }
 
-/* line 409, style.scss */
+/* line 406, styles.scss */
 .navigation-is-open .cd-nav-trigger .cd-nav-icon::before {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -526,7 +527,7 @@ main ul li a:hover {
   transform: rotate(45deg);
 }
 
-/* line 416, style.scss */
+/* line 413, styles.scss */
 .navigation-is-open .cd-nav-trigger .cd-nav-icon::after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -535,12 +536,12 @@ main ul li a:hover {
   transform: rotate(-45deg);
 }
 
-/* line 423, style.scss */
+/* line 420, styles.scss */
 .no-touch .navigation-is-open .cd-nav-trigger:hover .cd-nav-icon::after, .no-touch .navigation-is-open .cd-nav-trigger:hover .cd-nav-icon::before {
   top: 0;
 }
 
-/* line 426, style.scss */
+/* line 423, styles.scss */
 .navigation-is-open .cd-nav-trigger circle {
   stroke-dashoffset: 0;
   -webkit-transition: stroke-dashoffset 0.4s 0.3s;
@@ -549,12 +550,12 @@ main ul li a:hover {
 }
 
 @media only screen and (min-width: 1170px) {
-  /* line 433, style.scss */
+  /* line 430, styles.scss */
   .cd-nav-trigger {
     top: 40px;
   }
 }
-/* line 438, style.scss */
+/* line 435, styles.scss */
 .cd-nav {
   position: fixed;
   z-index: 1;
@@ -569,7 +570,7 @@ main ul li a:hover {
   transition: visibility 0s 0.7s;
 }
 
-/* line 451, style.scss */
+/* line 448, styles.scss */
 .cd-nav .cd-navigation-wrapper {
   /* all navigation content */
   height: 100%;
@@ -597,7 +598,7 @@ main ul li a:hover {
   transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
 }
 
-/* line 477, style.scss */
+/* line 474, styles.scss */
 .navigation-is-open .cd-nav {
   visibility: visible;
   -webkit-transition: visibility 0s 0s;
@@ -605,7 +606,7 @@ main ul li a:hover {
   transition: visibility 0s 0s;
 }
 
-/* line 483, style.scss */
+/* line 480, styles.scss */
 .navigation-is-open .cd-nav .cd-navigation-wrapper {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
@@ -620,7 +621,7 @@ main ul li a:hover {
   transition-timing-function: cubic-bezier(0.82, 0.01, 0.77, 0.78);
 }
 
-/* line 496, style.scss */
+/* line 493, styles.scss */
 .cd-nav h2 {
   position: relative;
   margin-bottom: 1.7em;
@@ -630,7 +631,7 @@ main ul li a:hover {
   text-transform: uppercase;
 }
 
-/* line 504, style.scss */
+/* line 501, styles.scss */
 .cd-nav h2::after {
   /* bottom separation line */
   content: '';
@@ -642,17 +643,17 @@ main ul li a:hover {
   background-color: currentColor;
 }
 
-/* line 514, style.scss */
+/* line 511, styles.scss */
 .cd-nav .cd-primary-nav {
   margin-top: 60px;
 }
 
-/* line 517, style.scss */
+/* line 514, styles.scss */
 .cd-nav .cd-primary-nav li {
   margin: 1.6em 0;
 }
 
-/* line 520, style.scss */
+/* line 517, styles.scss */
 .cd-nav .cd-primary-nav a {
   font-family: "Merriweather", serif;
   font-size: 2.4rem;
@@ -660,22 +661,22 @@ main ul li a:hover {
   display: inline-block;
 }
 
-/* line 526, style.scss */
+/* line 523, styles.scss */
 .cd-nav .cd-primary-nav a.selected {
   color: #ffffff;
 }
 
-/* line 529, style.scss */
+/* line 526, styles.scss */
 .no-touch .cd-nav .cd-primary-nav a:hover {
   color: #ffffff;
 }
 
-/* line 532, style.scss */
+/* line 529, styles.scss */
 .cd-nav .cd-contact-info {
   margin-top: 80px;
 }
 
-/* line 535, style.scss */
+/* line 532, styles.scss */
 .cd-nav .cd-contact-info li {
   font-family: "Merriweather", serif;
   margin-bottom: 1.5em;
@@ -683,90 +684,90 @@ main ul li a:hover {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* line 541, style.scss */
+/* line 538, styles.scss */
 .cd-nav .cd-contact-info a {
   color: #ffffff;
 }
 
-/* line 544, style.scss */
+/* line 541, styles.scss */
 .cd-nav .cd-contact-info span {
   display: block;
 }
 
-/* line 547, style.scss */
+/* line 544, styles.scss */
 .cd-nav .cd-contact-info li, .cd-nav .cd-contact-info a, .cd-nav .cd-contact-info span {
   font-size: 1.6rem;
 }
 
 @media only screen and (min-width: 1170px) {
-  /* line 551, style.scss */
+  /* line 548, styles.scss */
   .cd-nav .cd-navigation-wrapper {
     padding: 62px 20%;
   }
 
-  /* line 554, style.scss */
+  /* line 551, styles.scss */
   .cd-nav .cd-navigation-wrapper::after {
     clear: both;
     content: "";
     display: table;
   }
 
-  /* line 559, style.scss */
+  /* line 556, styles.scss */
   .cd-nav .cd-half-block {
     width: 50%;
     float: left;
   }
 
-  /* line 563, style.scss */
+  /* line 560, styles.scss */
   .cd-nav .cd-primary-nav {
     margin-top: 0;
   }
 
-  /* line 566, style.scss */
+  /* line 563, styles.scss */
   .cd-nav h2 {
     font-size: 1.5rem;
     margin-bottom: 5.6em;
   }
 
-  /* line 570, style.scss */
+  /* line 567, styles.scss */
   .cd-nav .cd-primary-nav li {
     margin: 2em 0;
   }
 
-  /* line 573, style.scss */
+  /* line 570, styles.scss */
   .cd-nav .cd-primary-nav a {
     font-size: 4.4rem;
   }
 
-  /* line 576, style.scss */
+  /* line 573, styles.scss */
   .cd-nav .cd-contact-info {
     margin-top: 120px;
     text-align: right;
   }
 
-  /* line 580, style.scss */
+  /* line 577, styles.scss */
   .cd-nav .cd-contact-info li {
     margin-bottom: 2.4em;
   }
 
-  /* line 583, style.scss */
+  /* line 580, styles.scss */
   .cd-nav .cd-contact-info li, .cd-nav .cd-contact-info a, .cd-nav .cd-contact-info span {
     font-size: 2rem;
   }
 }
-/* line 588, style.scss */
+/* line 585, styles.scss */
 .no-js main {
   height: auto;
   overflow: visible;
 }
 
-/* line 593, style.scss */
+/* line 590, styles.scss */
 .no-js .cd-nav {
   position: static;
   visibility: visible;
 }
 
-/* line 597, style.scss */
+/* line 594, styles.scss */
 .no-js .cd-nav .cd-navigation-wrapper {
   height: auto;
   overflow: visible;
