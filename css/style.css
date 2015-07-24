@@ -778,3 +778,39 @@ main ul li a:hover {
   -o-transform: translateX(0);
   transform: translateX(0);
 }
+@media all and (max-width: 1260px) {
+	.wordpress,
+	.magento {
+		background-position: 95% 5%;
+		background-size: 100px;
+	}
+	.design .holder {
+	    position: absolute;
+	    top: 15px;
+	    right: 15px;
+	    height: 100px;
+	    width: 100px;
+	}
+	.design .holder svg {
+		height: 100px;
+		width: 100px;
+	}
+	.dev .wrapper {
+	    position: absolute;
+	    top: auto;
+	    left: auto;
+	    right: 0;
+	    transform: translate(-50%, -50%);
+	}
+	.dev .wrapper img {
+		height: 100px;
+	}
+}
+@media all and (max-width: 767px) {
+	main {
+	  padding: 100px 15px;
+	}
+	main.page-content {
+		padding: 100px 15px;
+	}
+}
