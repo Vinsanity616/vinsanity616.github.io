@@ -136,18 +136,28 @@ main ul li a:hover {
 /* line 116, styles.scss */
 .magento {
   background-color: #000;
-  background: url(../img/magento-logo.png) black;
-  background-repeat: no-repeat;
-  background-position: 80% 50%;
+}
+
+.magento .animated {
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	margin-top: -200px;
+	margin-left: -170px;
 }
 
 /* line 123, styles.scss */
 .wordpress {
   background-color: #2d9dcc;
-  background: url(../img/wordpress-logo.png) #2d9dcc;
-  background-repeat: no-repeat;
-  background-position: 80% 50%;
-  background-size: 350px 350px;
+}
+
+.wordpress .animated {
+	height: 350px;
+	position: absolute;
+	top: 50%;
+	left: 80%;
+	margin-top: -175px;
+	margin-left: -175px;
 }
 
 /* line 131, styles.scss */
@@ -778,11 +788,122 @@ main ul li a:hover {
   -o-transform: translateX(0);
   transform: translateX(0);
 }
-@media all and (max-width: 1260px) {
-	.wordpress,
-	.magento {
-		background-position: 95% 5%;
-		background-size: 100px;
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+.animated.bounceIn,
+.animated.bounceOut {
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
+}
+
+.animated.flipOutX,
+.animated.flipOutY {
+  -webkit-animation-duration: .75s;
+  animation-duration: .75s;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+}
+@media all and (max-width: 1170px) {
+	.wordpress .animated,
+	.magento .animated {
+		top: 15px;
+		margin-top: 0;
+		left: auto;
+		margin-left: 0;
+		right: 15px;
+		height: 100px;
 	}
 	.design .holder {
 	    position: absolute;
